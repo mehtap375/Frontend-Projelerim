@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: 'Lato', sans-serif;
+} /*sayfamda bulunacak standart yazı tipini belirledim*/
+
+/***Navbar menu***/
+
+.menu{
+	background: #000;
+	position: fixed; /*bunu verdikten sonra top ve left veriyoruz*/
+	top: 0;
+	left: 0; /*solda başlasın*/
+	z-index: 1000; /*katmanlar üst üste geldiğinde hangisinin görüneceğini belirliyoruz*/
+}
+
+.navbar{
+	max-width: 1000px;
+	margin: auto;
+}
+
+.navbar-brand{
+	font-family: 'Pasifico', 'cursive';
+	color: #F881E0 !important;
+	font-size: 30px;
+}
+
+.navbar-brand:hover{
+	color: #D74EE7 !important;
+}
+
+.navbar ul li a{
+	color: #fff !important;
+	font-size: 14px !important; /*bootstraptan geldiğinden*/
+	margin-right: 10px;
+	transition: 0.5s; /*renk değişiminin olma süresi*/
+}
+
+.navbar ul li a:hover{
+	color: #848484 !important;
+}
+
+.navbar i{
+	color: white;
+	font-size: 18px;
+}
+
+/***Banner***/
+
+.banner{
+	height: 100vh;
+	background: url("images/banner.jpg");
+	background-position: 0 60px; /*foto aşağı 60 px kaydı*/
+	background-size: cover; /*ekranda tam görünsün*/
+}
+
+.banner .icerik{
+	/*position relative verdiğimde top ve left girebilmek için kullandık amaç yukardan aşağı soldan sağa kaydırabilmek için*/
+	position: relative;
+	max-width: 1000px; /*çok fazla yayılmasın diye verildi*/
+	top: 50%; /*yukardan aşağı %50 kaydırıldı*/
+	transform: translateY(-50%); /*içerik div i ni yüksekliğinin yarısı kadar yukarı taşıdı, dikeyde ortalayabilmek için kullanıldı top 50% ve bu*/
+	margin: auto;
+}
+
+.banner .icerik h1{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'lato', sans-serif;
+	font-weight: 400;
+	margin-bottom: 40px; /*alttan boşluk koyduk buton ile*/
+}
+
+.banner .icerik a{
+	font-size: 16px;
+	padding: 10px 30px; /* iç boşluk vererek büyütmek istedik*/
+	border-radius: 0; /*etrafı ovalleşmesin*/
+}
+
+/**bölüm 1**/
+
+.bolum1{
+	margin-top: 80px; 
+}
+.bolum1 h2{
+	color: palevioletred;
+	font-size: 28px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+.bolum1 p{
+	line-height: 30px; /*satırlar arası boşluk tanımlandı*/
+}
+
+.bolum1 a{
+	color: palevioletred;
+	font-weight: 300;
+	font-size: 14px;
+	border-radius: 0;
+}
+
+
+/**bölüm 2**/
+
+.bolum2 {
+	margin-top: 80px;
+}
+
+.bolum2 .col-md-6:nth-child(1){
+	background-color: antiquewhite;
+	padding: 100px 50px; /**iç boşluk**/
+}
+
+.bolum2 .col-md-6:nth-child(2){
+	background-color: bisque;
+	padding: 100px 50px; /**iç boşluk**/
+}
+
+.bolum2 h3{
+	color: palevioletred !important;
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 20px; /**alt boşluk**/
+}
+
+.bolum2 img{
+	width: 100%; /**bu sayede ekran küçülse de resim bulunduğu container ı tam kaplayacak**/
+	margin-bottom: 30px;
+}
+
+.bolum2 p{
+	line-height: 30px; /**satır aralarını açtık**/
+	font-size: 16px;
+	letter-spacing: 1px; /**harflerin arasını açtık**/
+	font-weight: 300;
+}
+
+/**bölüm 3**/
+
+.bolum3 {
+	margin-top: 80px;
+}
+
+.bolum3 i{
+	display: block; /**hizalayabilmek için block seviyeye getirdim**/
+	text-align: center;
+	font-size: 40px;
+	padding: 35px;
+	color: violet;
+}
+
+.bolum3 h5{
+	color: blueviolet!important;
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.bolum3 p{
+	line-height: 30px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	color: slategray;
+	text-align: justify; /**iki yana hizalar, center ortalar**/
+}
+
+/**bölüm 4**/
+
+.bolum4 {
+	margin-top: 80px;
+	background: #F3B5EF;
+	color: white;
+	padding-top: 80px;
+}
+
+.bolum4 h5{
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+
+.bolum4 input[type="text"]{
+	background: none;
+	border: 2px solid #F2EFEF;
+	color: white;
+}
+
+.bolum4 input[type="text"]:focus {
+	border: 3px solid white;
+	box-shadow: none;
+}
+
+.bolum4 textarea{
+	background-color: transparent !important;
+	border: 2px solid #F2EFEF;
+	color: white !important;
+}
+
+.bolum4 textarea:focus {
+	border: 3px solid white;
+	box-shadow: none;
+}
+
+.bolum4 button:hover{
+	color: pink !important;
+}
+
+@media screen and (max-width:992px){
+	.banner{
+		height: 70vh;
+	}
+}
+
