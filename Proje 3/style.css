@@ -1,0 +1,446 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+
+/**fontu import ettik istersek <link> olarak html e de yazardık**/
+
+* {
+    /**tüm nesneleri etkilesin**/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/**slider alanı**/
+
+.banner .slide img {
+    height: 100vh;
+}
+
+.carousel-caption {
+    pasition: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    botton: auto !important;
+    max-width: 400px;
+    margin: auto;
+}
+
+.caruosel span {
+    font-size: 14px;
+}
+
+.carousel h5 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.carousel p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.carousel a {
+    border-radius: 20px;
+    /**ovalleştirme**/
+}
+
+@media screen and (max-width:992px) {
+    .banner .slide img {
+        height: 70vh;
+    }
+}
+
+
+/**menü bölümü**/
+
+.menu {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1000px;
+}
+
+.navbar-brand {
+    font-family: 'Norican', cursive;
+    font-size: 38px !important;
+}
+
+.navbar a {
+    color: white;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.active {
+    background: #f7f7f7;
+    color: #121212 !important;
+}
+
+.black {
+    color: black !important;
+}
+
+@media screen and (max-width:992px) {
+    .menu {
+        background: #f7f7f7
+    }
+    .navbar a {
+        color: black !important;
+    }
+}
+
+
+/**bölüm 1**/
+
+.bolum1 {
+    background: #f2f2f2;
+    padding: 80px 0;
+    /**üstten alttan 80 sağdan soldan 0**/
+    text-align: center;
+}
+
+.bolum1 h3 {
+    font-size: 17px;
+    color: tan;
+    font-weight: 700;
+}
+
+.bolum1 .cizgi {
+    width: 60px;
+    height: 3px;
+    background-color: tan;
+    margin: auto;
+    /**ortaladı**/
+    margin-bottom: 50px;
+}
+
+.bolum1 .icerik {
+    padding: 15px;
+    /**kenarlara çok yapışmasını engelledik**/
+    background: #fff;
+    transition: 0.5s;
+}
+
+.bolum1 i {
+    font-size: 32px;
+    color: palevioletred;
+}
+
+.bolum1 h6 {
+    margin-top: 10px;
+    /**aşağı doğru kaymasını sağladık**/
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+.bolum1 p {
+    font-size: 13px;
+    color: #5a5a5a;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bolum1 .icerik:hover {
+    background: tan;
+}
+
+.bolum1 .icerik:hover i {
+    color: white
+}
+
+.bolum1 .icerik:hover h6 {
+    color: white
+}
+
+.bolum1 .icerik:hover p {
+    color: white
+}
+
+
+/**bölüm 2**/
+
+.bolum2 {
+    background-image: url("img/what-we-do-bg.png");
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.bolum2 h4 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.bolum2 p {
+    font-size: 14px;
+    color: white;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+.bolum2 .btn {
+    border-radius: 25px;
+    margin: 40px 0;
+}
+
+.bolum2 img {
+    width: 100%;
+    /**dışındaki kapsayıcıyı 100% kaplasın, daraldığı durumda width değerimiz de daralacak - responsive özelliği vermiş olduk**/
+}
+
+
+/**bölüm 3**/
+
+.bolum3 {
+    background: tan;
+    padding: 80px 0;
+}
+
+.bolum3 .cizgi {
+    width: 60px;
+    height: 3px;
+    background-color: lightpink;
+    margin: auto;
+    /**ortaladı**/
+    margin-bottom: 50px;
+}
+
+.bolum3 h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: deeppink;
+}
+
+.bolum3 a {
+    color: #5a5a5a !important;
+}
+
+.bolum3 .active {
+    color: mediumpurple !important;
+    background: none;
+}
+
+.bolum3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.bolum3 .kapsayici {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.bolum3 .hover-efekt {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: purple;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.bolum3 .hover-efekt i {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background: #fff;
+    color: purple;
+}
+
+.bolum3 .kapsayici:hover .hover-efekt {
+    opacity: 0.7;
+}
+
+
+/**bölüm 4**/
+
+.bolum4 {
+    padding: 80px 0;
+    background: url("img/blog-bg.png");
+    background-size: cover;
+}
+
+.bolum4 h3 {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.bolum4 .cizgi {
+    width: 60px;
+    height: 3px;
+    background-color: lightpink;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.bolum4 img {
+    width: 100%;
+}
+
+.bolum4 .resim {
+    position: relative;
+}
+
+.bolum4 .resimyazi {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: .6;
+}
+
+.bolum4 h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.bolum4 span {
+    font-size: 12px;
+    color: white;
+}
+
+
+/**bölüm 5**/
+
+.bolum5 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.bolum5 .etiket p {
+    font-size: 24px;
+    font-weight: 700;
+    color: pink;
+}
+
+.bolum5 .etiket span {
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: gray;
+}
+
+
+/**footer alanı**/
+
+footer {
+    background: url("img/contact-bg.png");
+    background-size: cover;
+    margin-top: 80px;
+    padding-top: 100px;
+}
+
+footer h3 {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+footer .cizgi {
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+footer img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer input {
+    color: #fff;
+    font-size: 13px;
+    background-color: rgba(250, 250, 250, 0.1);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+footer textarea {
+    color: #fff;
+    font-size: 13px;
+    background-color: rgba(250, 250, 250, 0.1);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 220px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+}
+
+footer button {
+    background: #a2cf8d;
+    padding: 12px 18px;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+
+footer button:hover {
+    background: #8ecf8d;
+}
+
+footer .altbolum {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+    background: #000;
+}
+
+footer .altbolum p {
+    font-size: 12px;
+    color: white;
+    margin-top: 15px;
+}
+
+footer .altbolum i {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    background: #a2cf8d;
+    border-radius: 100%;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 10px;
+}
