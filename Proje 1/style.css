@@ -1,0 +1,514 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/**bolum1**/
+
+.bolum1 {
+    height: 100vh;
+    background: url("images/bg_1.jpg");
+    background-size: cover;
+    background-position: 50% 0%;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 30px;
+    width: 85%;
+    z-index: 999;
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.bolum1 .navbar-brand {
+    font-weight: 600;
+}
+
+.bolum1 .navbar li {
+    margin-left: 15px;
+}
+
+.bolum1 .navbar li a {
+    font-size: 15px;
+    color: white !important;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.bolum1 .navbar .navbar-nav .active>a,
+.bolum1 .navbar .navbar-nav a:hover {
+    color: plum !important;
+}
+
+.bolum1 .container .row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bolum1 .sagicerik {
+    padding: 25px;
+    border-radius: 3px;
+}
+
+.bolum1 .sagicerik h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.bolum1 .sagicerik label {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bolum1 .sagicerik input[type="submit"] {
+    background-color: blueviolet !important;
+    border: 1px solid blueviolet !important;
+    padding: 15px 0;
+}
+
+.bolum1 .sagicerik input[type="text"] {
+    font-size: 12px;
+}
+
+@media only screen and (max-width:768px) {
+    .bolum1 {
+        height: 850px;
+    }
+    h2 {
+        margin-top: 35px;
+    }
+}
+
+
+/**bolum 2**/
+
+.bolum2 {
+    margin: 50px auto;
+}
+
+.bolum2 label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bolum2 select {
+    font-size: 13px;
+}
+
+.bolum2 .btn.btn-primary {
+    margin-top: 30px;
+    background-color: purple !important;
+    border: 1px solid purple !important;
+    /**border: none;**/
+}
+
+
+/**bolum3**/
+
+.bolum3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bolum3 p {
+    color: purple;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.bolum3 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum3 i {
+    font-size: 25px;
+    color: plum !important;
+}
+
+.bolum3 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    display: inline;
+}
+
+
+/*** .bolum3 .etiket {
+    text-align: left;
+}***/
+
+.bolum3 .etiket p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    /**satır yüksekliği**/
+    color: gray;
+    margin-top: 30px;
+    text-align: left;
+}
+
+
+/**bolum4**/
+
+.bolum4 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bolum4 p {
+    font-size: 12px;
+    color: purple;
+    font-weight: 600;
+}
+
+.bolum4 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum4 .etiket {
+    width: 100%;
+    text-align: center;
+    border: 1px solid pink;
+    padding-bottom: 20px;
+}
+
+.bolum4 .etiket .img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.bolum4 .fiyat {
+    background: white;
+    /**display: flex;**/
+}
+
+.bolum4 .tutar {
+    font-size: 20px;
+    padding: 10px;
+    color: plum;
+}
+
+.bolum4 .fiyat p {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.bolum4 .fiyat .from-day span {
+    display: block;
+    font-size: 10px;
+}
+
+.bolum4 .etiket h5 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000;
+}
+
+.bolum4 .etiket p {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.bolum4 .butonlar {
+    display: flex;
+    justify-content: space-around;
+    /**sağdan soldan eşit boşluklar koyar**/
+}
+
+.bolum4 .etiket .btn {
+    width: 45%;
+    color: #000;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.bolum4 .etiket .butonlar .btn:hover {
+    background: palevioletred;
+    color: white;
+    font-weight: 600;
+}
+
+.bolum4 .col-md-6.col-lg-3 {
+    /**arasında boşluk kalmayacak çünkü aynı sınıf**/
+    margin-bottom: 20px;
+}
+
+
+/**bolum 5**/
+
+.bolum5 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url("images/bg_2.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.bolum5 .container {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.bolum5 p {
+    margin-top: 50px;
+    font-size: 16px;
+    color: white;
+}
+
+.bolum5 h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.bolum5 .resim {
+    width: 85px;
+    height: 85px;
+    border: 2px solid plum;
+    border-radius: 100%;
+    font-size: 30px;
+    padding: 30px;
+    display: inline-block;
+    /**width ve height değerleri verebilmek için inline-block**/
+}
+
+.bolum5 .icerik h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.bolum5 .icerik p {
+    color: rgba(255, 255, 255, 0.8);
+    /**255 ten gidersek beyazdan griye döner, 0 0 0 0.8 gibi yaparsak siyahtan griye döner**/
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .bolum5 {
+        height: 1350px;
+    }
+    .bolum5 .icerik {
+        margin-bottom: 50px;
+    }
+}
+
+
+/**bölüm 6**/
+
+.bolum6 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bolum6 p {
+    font-size: 12px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum6 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum6 .card {
+    text-align: center;
+    height: 100%;
+}
+
+.bolum6 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.bolum6 .card p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #666;
+}
+
+.bolum6 .card h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fc983c;
+}
+
+.bolum6 .card span {
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 600;
+}
+
+
+/**bölüm 7**/
+
+.bolum7 {
+    margin-top: 100px;
+}
+
+.bolum7 .resim {
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bolum7 .baslik p {
+    font-size: 14px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum7 .baslik h3 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.bolum7 article {
+    padding: 40px;
+}
+
+.bolum7 article p.icerik {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #666;
+}
+
+.bolum7 article .btn {
+    background-color: #fc983c;
+    border: none;
+    color: white;
+}
+
+@media only screen and (max-width:768px) {
+    .bolum7 .resim {
+        height: 600px;
+    }
+}
+
+
+/**bölüm8 footer**/
+
+footer {
+    margin-top: 100px;
+    background: #000;
+    padding: 80px 0;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+footer p {
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+footer ul.sosyalmedya {
+    margin-top: 40px;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+footer ul.sosyalmedya li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #171717;
+}
+
+footer ul.sosyalmedya li a {
+    display: block;
+    font-size: 25px;
+    color: white;
+}
+
+footer ul.footerliste {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul.footerliste li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer ul.footerliste li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footerliste i {
+    color: #fff;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+footer .lisans {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bolum2,
+.bolum3,
+.bolum4,
+.bolum5,
+.bolum6,
+.bolum7,
+footer {
+    opacity: 0;
+}
